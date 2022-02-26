@@ -7,6 +7,7 @@ Release:       1
 URL:           http://nulloy.com
 Source:        https://github.com/nulloy/nulloy/archive/refs/tags/%{version}/%{name}-%{version}.tar.gz
 BuildRequires: qt5-qtbase-devel
+BuildRequires: zip
 BuildRequires: qmake5
 BuildRequires: qt5-linguist-tools
 BuildRequires: pkgconfig(Qt5Designer)
