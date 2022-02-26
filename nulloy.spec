@@ -10,6 +10,7 @@ BuildRequires: qt5-qtbase-devel
 BuildRequires: qmake5
 BuildRequires: qt5-linguist-tools
 BuildRequires: pkgconfig(Qt5Designer)
+BuildRequires: pkgconfig(Qt5Script)
 BuildRequires: pkgconfig(gstreamer-plugins-base-1.0)
 BuildRequires: pkgconfig(gstreamer-1.0)
 BuildRequires: pkgconfig(libzip)
