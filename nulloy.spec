@@ -6,18 +6,15 @@ Version:       0.9.1
 Release:       1
 URL:           http://nulloy.com
 Source:        https://github.com/nulloy/nulloy/archive/refs/tags/%{version}/%{name}-%{version}.tar.gz
-BuildRequires: qt5-qtbase-devel 
-qt5-qttools-devel 
-qt5-qttools-static 
-qt5-qtscript-devel 
-qt5-qtbase-private-devel 
-qt5-linguist 
-gstreamer1-plugins-base-devel
-gstreamer1-devel 
-zip 
-libX11-devel 
-libxcb-devel 
-taglib-devel
+BuildRequires: qt5-qtbase-devel
+BuildRequires: qmake5
+BuildRequires: qt5-linguist-tools
+BuildRequires: pkgconfig(gstreamer-plugins-base-1.0)
+BuildRequires: pkgconfig(gstreamer-1.0)
+BuildRequires: pkgconfig(libzip)
+BuildRequires: pkgconfig(x11) 
+BuildRequires: pkgconfig(xcb)
+BuildRequires: pkgconfig(taglib)
 
 %description
 Music player with a waveform progress bar.
