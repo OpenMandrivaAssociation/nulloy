@@ -1,4 +1,4 @@
-%define _empty_manifest_terminate_build
+%define _empty_manifest_terminate_build 0
 
 Name:          nulloy
 License:       GPLv3
