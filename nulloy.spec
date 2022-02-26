@@ -9,6 +9,7 @@ Source:        https://github.com/nulloy/nulloy/archive/refs/tags/%{version}/%{n
 BuildRequires: qt5-qtbase-devel
 BuildRequires: qmake5
 BuildRequires: qt5-linguist-tools
+BuildRequires: pkgconfig(Qt5Designer)
 BuildRequires: pkgconfig(gstreamer-plugins-base-1.0)
 BuildRequires: pkgconfig(gstreamer-1.0)
 BuildRequires: pkgconfig(libzip)
