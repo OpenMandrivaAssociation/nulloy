@@ -1,3 +1,5 @@
+%define _empty_manifest_terminate_build
+
 Name:          nulloy
 License:       GPLv3
 Summary:       Music player with a waveform progress bar
