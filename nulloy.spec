@@ -38,13 +38,10 @@ QMAKE=qmake-qt5 \
 %install
 %make_install
 
-#mkdir -p %{buildroot}%{_datadir}/icons/hicolor/128x128/apps
-#install -m 755 xlock/xlock -D %{buildroot}%{_bindir}/xlock
-
 %files
 %{_bindir}/%{name}
 %{_datadir}/%{name}/skins/*
 %{_datadir}/%{name}/i18n/*
-#{_datadir}/icons/*
+%{_datadir}/icons/*
 %{_datadir}/applications/%{name}.desktop
 %{_libdir}/%{name}/plugins/
