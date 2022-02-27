@@ -44,4 +44,4 @@ QMAKE=qmake-qt5 \
 %{_datadir}/%{name}/i18n/*
 %{_datadir}/icons/*
 %{_datadir}/applications/%{name}.desktop
-%{_libdir}/%{name}/plugins/
+#{_libdir}/%{name}/plugins/
