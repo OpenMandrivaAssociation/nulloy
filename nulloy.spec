@@ -31,10 +31,10 @@ Music player with a waveform progress bar.
 QMAKE=qmake-qt5 \
 #LRELEASE=lrelease-qt5 \
 ./configure --no-update-check --prefix %{buildroot}%{_prefix}
-make
+%make_build
 
 %install
-make install
+%make_install
 
 %files
 %defattr(-,root,root)
