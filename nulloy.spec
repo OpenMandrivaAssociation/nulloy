@@ -17,7 +17,7 @@ BuildRequires: pkgconfig(Qt5Script)
 BuildRequires: pkgconfig(gstreamer-plugins-base-1.0)
 BuildRequires: pkgconfig(gstreamer-1.0)
 BuildRequires: pkgconfig(phonon4qt5)
-BuildRequires: pkgconfig(libvlc)
+#BuildRequires: pkgconfig(libvlc)
 BuildRequires: pkgconfig(libzip)
 BuildRequires: pkgconfig(x11) 
 BuildRequires: pkgconfig(xcb)
@@ -31,7 +31,7 @@ Music player with a waveform progress bar.
 
 %build
 QMAKE=qmake-qt5 \
-./configure --no-update-check --prefix %{buildroot}%{_prefix} --libdir %{buildroot}%{_libdir} --phonon --vlc
+./configure --no-update-check --prefix %{buildroot}%{_prefix} --libdir %{buildroot}%{_libdir} --phonon
 %make_build
 
 %install
