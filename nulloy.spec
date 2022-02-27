@@ -31,7 +31,7 @@ Music player with a waveform progress bar.
 
 %build
 QMAKE=qmake-qt5 \
-./configure --no-update-check --prefix %{buildroot}%{_prefix} --libdir %{_libdir} --phonon
+./configure --no-update-check --prefix %{buildroot}%{_prefix} --libdir %{_lib} --phonon
 %make_build
 
 %install
