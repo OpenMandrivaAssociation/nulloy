@@ -38,10 +38,9 @@ QMAKE=qmake-qt5 \
 %make_install
 
 %files
-%defattr(-,root,root)
 %{_bindir}/%{name}
 %{_datadir}/%{name}/skins/*
 %{_datadir}/%{name}/i18n/*
-%{_datadir}/icons/*
+#{_datadir}/icons/*
 %{_datadir}/applications/%{name}.desktop
 %{_libdir}/%{name}/plugins/
