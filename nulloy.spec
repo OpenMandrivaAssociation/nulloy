@@ -11,6 +11,7 @@ Source:        https://github.com/nulloy/nulloy/archive/refs/tags/%{version}/%{n
 BuildRequires: qt5-qtbase-devel
 BuildRequires: zip
 BuildRequires: qmake5
+BuildRequires: imagemagick
 BuildRequires: qt5-linguist-tools
 BuildRequires: pkgconfig(Qt5Designer)
 BuildRequires: pkgconfig(Qt5Script)
@@ -36,6 +37,9 @@ QMAKE=qmake-qt5 \
 
 %install
 %make_install
+
+#mkdir -p %{buildroot}%{_datadir}/icons/hicolor/128x128/apps
+#install -m 755 xlock/xlock -D %{buildroot}%{_bindir}/xlock
 
 %files
 %{_bindir}/%{name}
