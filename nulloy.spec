@@ -43,15 +43,15 @@ QMAKE=qmake-qt5 \
 
 install -Dm644 %{SOURCE1} %{buildroot}%{_datadir}/pixmaps/nulloy.png
 
-for size in 16x16 32x32 48x48 64x64; do
-	mkdir -p %{buildroot}%{_datadir}/icons/hicolor/${size}/apps
-	convert %{buildroot}%{_datadir}/pixmaps/nulloy.png -scale ${size}x${size} %{buildroot}%{_datadir}/icons/hicolor/${size}/apps/nulloy.png
+#for size in 16x16 32x32 48x48 64x64; do
+#	mkdir -p %{buildroot}%{_datadir}/icons/hicolor/${size}/apps
+#	convert %{buildroot}%{_datadir}/pixmaps/nulloy.png -scale ${size}x${size} %{buildroot}%{_datadir}/icons/hicolor/${size}/apps/nulloy.png
 
 %files
 %{_bindir}/%{name}
 %{_datadir}/%{name}/skins/*
 %{_datadir}/%{name}/i18n/*
 %{_datadir}/pixmaps/nulloy.png
-%{_datadir}/icons/hicolor/*/apps/nulloy.png
+#{_datadir}/icons/hicolor/*/apps/nulloy.png
 %{_datadir}/applications/%{name}.desktop
 %{_libdir}/%{name}/plugins/
