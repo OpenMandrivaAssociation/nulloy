@@ -41,7 +41,7 @@ QMAKE=qmake-qt5 \
 %install
 %make_install
 
-install -Dm755 %{SOURCE1} %{buildroot}%{_datadir}/pixmaps/nulloy.png
+install -Dm644 %{SOURCE1} %{buildroot}%{_datadir}/pixmaps/nulloy.png
 
 for size in 16x16 32x32 48x48 64x64; do
 	mkdir -p %{buildroot}%{_datadir}/icons/hicolor/${size}/apps
