@@ -4,7 +4,7 @@ Name:          nulloy
 License:       GPLv3
 Summary:       Music player with a waveform progress bar
 Group:         Music/Audio
-Version:       0.9.1
+Version:       0.9.5
 Release:       1
 URL:           http://nulloy.com
 Source0:       https://github.com/nulloy/nulloy/archive/refs/tags/%{version}/%{name}-%{version}.tar.gz
@@ -41,7 +41,7 @@ QMAKE=qmake-qt5 \
 %install
 %make_install
 
-install -Dm644 %{SOURCE1} %{buildroot}%{_datadir}/pixmaps/nulloy.png
+#install -Dm644 %{SOURCE1} %{buildroot}%{_datadir}/pixmaps/nulloy.png
 
 #for size in 16x16 32x32 48x48 64x64; do
 #	mkdir -p %{buildroot}%{_datadir}/icons/hicolor/${size}/apps
@@ -51,7 +51,7 @@ install -Dm644 %{SOURCE1} %{buildroot}%{_datadir}/pixmaps/nulloy.png
 %{_bindir}/%{name}
 %{_datadir}/%{name}/skins/*
 %{_datadir}/%{name}/i18n/*
-%{_datadir}/pixmaps/nulloy.png
+#{_datadir}/pixmaps/nulloy.png
 #{_datadir}/icons/hicolor/*/apps/nulloy.png
 %{_datadir}/applications/%{name}.desktop
 %{_libdir}/%{name}/plugins/
