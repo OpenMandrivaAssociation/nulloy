@@ -31,6 +31,8 @@ BuildRequires: pkgconfig(libzip)
 BuildRequires: pkgconfig(x11) 
 BuildRequires: pkgconfig(xcb)
 BuildRequires: pkgconfig(taglib)
+BuildRequires: librsvg
+BuildRequires: imagemagick
 
 %description
 Music player with a waveform progress bar.
