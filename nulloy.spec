@@ -18,6 +18,7 @@ BuildRequires: imagemagick
 BuildRequires: qt5-linguist-tools
 BuildRequires: pkgconfig(Qt5Designer)
 BuildRequires: pkgconfig(Qt5Script)
+BuildRequires: pkgconfig(Qt5Svg)
 BuildRequires: pkgconfig(gstreamer-plugins-base-1.0)
 BuildRequires: pkgconfig(gstreamer-1.0)
 BuildRequires: pkgconfig(phonon4qt5)
