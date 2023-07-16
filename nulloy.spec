@@ -24,6 +24,8 @@ BuildRequires: pkgconfig(Qt5Gui)
 BuildRequires: pkgconfig(Qt5Network)
 BuildRequires: pkgconfig(Qt5Widgets)
 BuildRequires: pkgconfig(gstreamer-plugins-base-1.0)
+BuildRequires: pkgconfig(gstreamer-plugins-bad-1.0)
+BuildRequires: pkgconfig(gstreamer-plugins-ugly-1.0)
 BuildRequires: pkgconfig(gstreamer-1.0)
 BuildRequires: pkgconfig(phonon4qt5)
 #BuildRequires: pkgconfig(libvlc)
@@ -32,7 +34,10 @@ BuildRequires: pkgconfig(x11)
 BuildRequires: pkgconfig(xcb)
 BuildRequires: pkgconfig(taglib)
 BuildRequires: librsvg
-BuildRequires: imagemagick
+
+Requires:  gstreamer1.0-plugins-good
+Requires:  gstreamer1.0-plugins-bad
+Requires:  gstreamer1.0-plugins-ugly
 
 %description
 Music player with a waveform progress bar.
