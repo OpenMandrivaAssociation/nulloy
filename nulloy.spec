@@ -4,12 +4,13 @@ Name:          nulloy
 License:       GPLv3
 Summary:       Music player with a waveform progress bar
 Group:         Music/Audio
-Version:       0.9.5
+Version:       0.9.7.1
 Release:       1
 URL:           http://nulloy.com
 Source0:       https://github.com/nulloy/nulloy/archive/refs/tags/%{version}/%{name}-%{version}.tar.gz
 Source1:       nulloy.png
 
+BuildRequires: which
 BuildRequires: imagemagick
 BuildRequires: qt5-qtbase-devel
 BuildRequires: zip
@@ -45,7 +46,9 @@ Music player with a waveform progress bar.
 %autosetup -p1
 
 %build
-QMAKE=qmake-qt5 \
+QMAKE=/usr/bin/qmake-qt5 \
+LRELEASE=/usr/bin/lrelease \
+PKG_CONFIG=/usr/bin/pkg-config
 ./configure --no-update-check --prefix %{buildroot}%{_prefix} --libdir %{_lib}
 %make_build
 
@@ -63,6 +66,6 @@ install -Dm644 %{SOURCE1} %{buildroot}%{_datadir}/pixmaps/nulloy.png
 %{_datadir}/%{name}/skins/*
 %{_datadir}/%{name}/i18n/*
 %{_datadir}/pixmaps/nulloy.png
-#{_datadir}/icons/hicolor/*/apps/nulloy.png
+%{_iconsdir}/hicolor/scalable/apps/nulloy.svg
 %{_datadir}/applications/%{name}.desktop
 %{_libdir}/%{name}/plugins/
