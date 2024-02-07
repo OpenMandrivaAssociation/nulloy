@@ -66,6 +66,6 @@ install -Dm644 %{SOURCE1} %{buildroot}%{_datadir}/pixmaps/nulloy.png
 %{_datadir}/%{name}/skins/*
 %{_datadir}/%{name}/i18n/*
 %{_datadir}/pixmaps/nulloy.png
-#{_datadir}/icons/hicolor/*/apps/nulloy.png
+%{_iconsdir}/hicolor/scalable/apps/nulloy.svg
 %{_datadir}/applications/%{name}.desktop
 %{_libdir}/%{name}/plugins/
