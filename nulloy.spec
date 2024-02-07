@@ -45,7 +45,7 @@ Music player with a waveform progress bar.
 %autosetup -p1
 
 %build
-QMAKE=qmake \
+QMAKE=/usr/bin/qmake-qt5 \
 ./configure --no-update-check --prefix %{buildroot}%{_prefix} --libdir %{_lib}
 %make_build
 
