@@ -4,7 +4,7 @@ Name:          nulloy
 License:       GPLv3
 Summary:       Music player with a waveform progress bar
 Group:         Music/Audio
-Version:       0.9.5
+Version:       0.9.7.1
 Release:       1
 URL:           http://nulloy.com
 Source0:       https://github.com/nulloy/nulloy/archive/refs/tags/%{version}/%{name}-%{version}.tar.gz
