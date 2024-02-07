@@ -46,6 +46,7 @@ Music player with a waveform progress bar.
 
 %build
 QMAKE=/usr/bin/qmake-qt5 \
+LRELEASE=/usr/bin/lrelease \
 ./configure --no-update-check --prefix %{buildroot}%{_prefix} --libdir %{_lib}
 %make_build
 
