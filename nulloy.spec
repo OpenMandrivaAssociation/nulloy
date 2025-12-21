@@ -10,6 +10,10 @@ URL:           https://nulloy.com
 Source0:       https://github.com/nulloy/nulloy/archive/refs/tags/%{version}/%{name}-%{version}.tar.gz
 Source1:       nulloy.png
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
 BuildRequires: which
 BuildRequires: imagemagick
 BuildRequires: qt5-qtbase-devel
